@@ -28,7 +28,7 @@ services:
       - /docker/letsencrypt:/letsencrypt
 
   nginx:
-    image: nginx    
+    image: nginx
     container_name: nginx
     restart: unless-stopped
     networks:
@@ -43,5 +43,3 @@ services:
 
 networks:
   proxy:
-    
-    
